@@ -1,10 +1,10 @@
 import { test, expect } from 'vitest';
 
-import type { DataEnergy, EthereumEnergy } from '.';
+import type { BitcoinDogeEnergy, EthereumEnergy } from '.';
 import { fetchBitcoin, fetchEthereum } from '.';
 
 test('Get data on Bitcoin', async () => {
-  const data: DataEnergy | undefined = await fetchBitcoin('20180101');
+  const data: BitcoinDogeEnergy | undefined = await fetchBitcoin('20180101');
   expect(data?.['24hr_kWh']).toBe('100808360');
   expect(data?.['24hr_kgCO2']).toBe('48213614');
   expect(data?.Output_kWh).toBe('122.8');
@@ -12,7 +12,7 @@ test('Get data on Bitcoin', async () => {
 }, 10000);
 
 test('Get data on Bitcoin 2025', async () => {
-  const data: DataEnergy | undefined = await fetchBitcoin('20250101');
+  const data: BitcoinDogeEnergy | undefined = await fetchBitcoin('20250101');
   expect(Number(data?.['24hr_kWh'])).toBeGreaterThan(100808360);
   expect(Number(data?.['24hr_kgCO2'])).toBeGreaterThan(48213614);
   expect(Number(data?.Output_kWh)).toBeGreaterThan(122.8);

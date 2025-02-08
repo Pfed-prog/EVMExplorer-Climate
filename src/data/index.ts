@@ -1,4 +1,4 @@
-export type DataEnergy = {
+export type BitcoinDogeEnergy = {
   '24hr_kWh': string;
   '24hr_kgCO2': string;
   Output_kWh: string;
@@ -18,7 +18,7 @@ export async function fetchBitcoin(date: string) {
   );
   const dataJson = await data.json();
   if (Array.isArray(dataJson) && dataJson.length > 0) {
-    return dataJson[0] as DataEnergy;
+    return dataJson[0] as BitcoinDogeEnergy;
   }
 }
 
@@ -38,6 +38,6 @@ export async function fetchDogecoin(date: string) {
   );
   const dataJson = await data.json();
   if (Array.isArray(dataJson) && dataJson.length > 0) {
-    return dataJson[0] as DataEnergy;
+    return dataJson[0] as BitcoinDogeEnergy;
   }
 }
