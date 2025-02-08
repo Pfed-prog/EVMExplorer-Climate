@@ -19,3 +19,5 @@ yarn add @evmexplorer/climate
 [EVM Explorer - Tracking Smart Contract Transaction Data](https://dspyt.com/evmexplorer)
 
 [Digiconomist API Documentation](https://digiconomist.net/api-documentation/)
+
+[DOVU carbon API](https://docs.dovu.market/)
