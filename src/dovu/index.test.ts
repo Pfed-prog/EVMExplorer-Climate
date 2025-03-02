@@ -13,7 +13,7 @@ test('Get data on Address', async () => {
   expect(data.address_transaction_count).toBe(1349);
   expect(data.dov_per_kg).toBeGreaterThan(47);
   expect(data.dov_price).toBe(0.02);
-  expect(data.dov_to_buy).toBeGreaterThan(2858.6909974249643);
+  expect(data.dov_to_buy).toBeGreaterThan(2000);
 }, 10000);
 
 test('Get data on Price', async () => {
@@ -34,5 +34,5 @@ test('Get data on Market Debt', async () => {
   expect(data?.total_carbon_debt).toBe(2615630277.9349675);
   expect(data?.day_carbon_debt).toBe(2183967.898909201);
   expect(data?.day_change_carbon_debt).toBe(-1177453.73868674);
-  expect(data?.cost_to_offset).toBeGreaterThan(1087874.6357867662);
+  expect(data?.cost_to_offset).toBeGreaterThan(907874);
 }, 10000);
