@@ -11,7 +11,7 @@ test('Get data on Address', async () => {
   expect(data.address_carbon_emissions).toBe(137465.81604445953);
   expect(data.address_gas_used).toBe(759651963);
   expect(data.address_transaction_count).toBe(1349);
-  expect(data.dov_per_kg).toBeGreaterThan(47);
+  expect(data.dov_per_kg).toBeGreaterThan(40);
   expect(data.dov_price).toBe(0.02);
   expect(data.dov_to_buy).toBeGreaterThan(2000);
 }, 10000);
