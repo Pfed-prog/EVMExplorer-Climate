@@ -1,6 +1,6 @@
 {
   "name": "@evmexplorer/climate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "EVM Explorer Climate SDK",
   "main": "dist/index.js",
   "homepage": "https://github.com/Pfed-prog/EVMExplorer-Climate",
@@ -39,7 +39,7 @@
     "prettier": "3.5.3",
     "tsup": "^8.3.0",
     "typescript": "^5.6.3",
-    "viem": "2.23.5",
+    "viem": "2.23.6",
     "vitest": "3.0.7"
   },
   "repository": {

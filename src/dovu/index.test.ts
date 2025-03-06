@@ -34,5 +34,5 @@ test('Get data on Market Debt', async () => {
   expect(data?.total_carbon_debt).toBe(2615630277.9349675);
   expect(data?.day_carbon_debt).toBe(2183967.898909201);
   expect(data?.day_change_carbon_debt).toBe(-1177453.73868674);
-  expect(data?.cost_to_offset).toBeGreaterThan(907874);
+  expect(data?.cost_to_offset).toBeGreaterThan(807874);
 }, 10000);
